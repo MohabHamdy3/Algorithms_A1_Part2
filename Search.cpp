@@ -31,13 +31,9 @@ int binarySearchIterative(int arr[], int size, int target) {
         if (arr[mid] == target){
             return mid;
         }
-              
-
         else if (target < arr[mid]){
             right = mid - 1;
-        }
-            
-
+        }            
         else{
             left = mid + 1;
         }
@@ -72,7 +68,7 @@ int main() {
 
     cout << "Sequential Search (Iterative): " << sequentialSearch(arr, size, target) << endl;
     cout << "Sequential Search (Recursive): " << recursiveSequentialSearch(arr, size, target) << endl;
-    
+
     cout << "Binary Search (Iterative): " << binarySearchIterative(arr, size, target) << endl;
     cout << "Binary Search (Recursive): " << binarySearchRecursive(arr, 0, size - 1, target) << endl;
 
